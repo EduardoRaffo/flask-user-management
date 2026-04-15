@@ -41,7 +41,12 @@ class UserValidator:
             "user_age": (Check_age, "Edad no valida."),
         }
         for field, (func, msg) in validators.items():
-            value = self.data.get(field, "").strip()
+            value = self.data.get(field, "")
+            # Convertir a string si es necesario, para compatibilidad con Pydantic
+            if not isinstance(value, str):
+                value = str(value) if value is not None else ""
+            else:
+                value = value.strip()
             if not func(value):
                 self.errors.append(f"{field}: {msg}")
         return len(self.errors) == 0
