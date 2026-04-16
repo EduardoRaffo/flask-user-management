@@ -1,0 +1,11 @@
+[
+    {
+        "user_name": "Nombre",
+        "user_surname": "Apellido",
+        "email": "usuario@ejemplo.com",
+        "password": "contraseña",
+        "phone_num": "000000000",
+        "user_age": "25",
+        "id": 1
+    }
+]

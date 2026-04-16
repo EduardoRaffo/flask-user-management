@@ -1,1 +1,27 @@
+# Archivos de entorno
 .env
+.env.local
+
+# Caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.Python
+
+# Entornos virtuales
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Datos runtime (datos de usuarios, cambios locales)
+users_data.json
+
+# Scripts locales/utilidades
+restart.py

@@ -1,6 +1,8 @@
 from types import SimpleNamespace
+from pathlib import Path
 import json
-FILENAME = "users_data.json"
+
+FILENAME = Path(__file__).parent / "users_data.json"
 def Load_users():
     try:
         with open(FILENAME, 'r', encoding='utf-8') as f:

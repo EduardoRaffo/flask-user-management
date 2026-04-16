@@ -11,23 +11,29 @@
     </div>
   {% endif %}
 
-  <form method="POST" action="{{ url_for('update_user', user_id=user_id) }}">
+  <form method="POST" action="/update/{{ user_id }}">
     <div class="mb-4">
       <label class="block text-white">Nombre:</label>
-      <input type="text" name="nombre" value="{{ usuario.user_name }}" class="w-full rounded p-2">
+      <input type="text" name="nombre" value="{{ usuario.user_name }}"
+             class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500
+                    dark:bg-gray-700 dark:border-gray-600 dark:text-white text-sm sm:text-base">
     </div>
 
     <div class="mb-4">
       <label class="block text-white">Apellido:</label>
-      <input type="text" name="apellido" value="{{ usuario.user_surname }}" class="w-full rounded p-2">
+      <input type="text" name="apellido" value="{{ usuario.user_surname }}"
+             class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500
+                    dark:bg-gray-700 dark:border-gray-600 dark:text-white text-sm sm:text-base">
     </div>
 
     <div class="mb-4">
       <label class="block text-white">Email:</label>
-      <input type="email" name="email" value="{{ usuario.email }}" class="w-full rounded p-2">
+      <input type="email" name="email" value="{{ usuario.email }}"
+             class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500
+                    dark:bg-gray-700 dark:border-gray-600 dark:text-white text-sm sm:text-base">
     </div>
 
-    <div class="relative group">
+    <div class="relative group mb-4">
       <input
         type="password"
         id="password-field"
@@ -64,12 +70,16 @@
 
     <div class="mb-4">
       <label class="block text-white">Teléfono:</label>
-      <input type="text" name="phone_num" value="{{ usuario.phone_num }}" class="w-full rounded p-2">
+      <input type="text" name="phone_num" value="{{ usuario.phone_num }}"
+             class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500
+                    dark:bg-gray-700 dark:border-gray-600 dark:text-white text-sm sm:text-base">
     </div>
 
     <div class="mb-6">
       <label class="block text-white">Edad:</label>
-      <input type="number" name="edad" value="{{ usuario.user_age }}" class="w-full rounded p-2">
+      <input type="number" name="edad" value="{{ usuario.user_age }}"
+             class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500
+                    dark:bg-gray-700 dark:border-gray-600 dark:text-white text-sm sm:text-base">
     </div>
 
     <div class="text-center">

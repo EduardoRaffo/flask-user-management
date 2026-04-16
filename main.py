@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import RedirectResponse
 from models import UserCreate, User
 from types import SimpleNamespace
+from pathlib import Path
 import json_users_data as jud
 import validations as v
 
@@ -13,7 +14,9 @@ app = FastAPI(
     version="1.0.0"
 )
 
-templates = Jinja2Templates(directory="templates")
+# Ruta absoluta para que funcione independientemente del directorio de ejecución
+BASE_DIR = Path(__file__).parent
+templates = Jinja2Templates(directory=BASE_DIR / "templates")
 
 app.add_middleware(
     CORSMiddleware,
