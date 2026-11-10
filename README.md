@@ -108,6 +108,6 @@ MIT License — free for educational and personal use.
 
 ## 👤 Author
 
-**Eduardo Raffo** — Python Backend Developer (Junior)
+**Eduardo Raffo** — Python Backend Developer
 - GitHub: [github.com/EduardoRaffo](https://github.com/EduardoRaffo)
 - LinkedIn: [linkedin.com/in/eduardo-raffo-benitez](https://linkedin.com/in/eduardo-raffo-benitez)
