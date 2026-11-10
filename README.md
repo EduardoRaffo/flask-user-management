@@ -47,8 +47,8 @@ This project covers the full cycle of a **Python backend web application**: rout
 ## 🚀 Quick Start
 
 ```bash
-git clone https://github.com/EduardoRaffo/final-test--web--json--flask.git
-cd final-test--web--json--flask
+git clone https://github.com/EduardoRaffo/flask-user-management.git
+cd flask-user-management
 pip install -r requirements.txt
 python Prueba_Final_Web.py
 ```
